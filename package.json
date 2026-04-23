@@ -1,0 +1,38 @@
+{
+	"name": "random-profiles-mcp",
+	"version": "1.4.3",
+	"description": "MCP server for Random Profiles API — generate fake user profiles and companies for AI agents",
+	"mcpName": "com.random-profiles/mcp",
+	"type": "module",
+	"bin": {
+		"random-profiles-mcp": "./dist/index.js"
+	},
+	"files": ["dist"],
+	"scripts": {
+		"build": "bun build src/index.ts --outfile dist/index.js --target node",
+		"prepublishOnly": "bun run build"
+	},
+	"dependencies": {
+		"@modelcontextprotocol/sdk": "^1.29.0"
+	},
+	"keywords": [
+		"mcp",
+		"fake-data",
+		"test-data",
+		"profiles",
+		"companies",
+		"seed-data",
+		"ai-tools",
+		"claude",
+		"model-context-protocol"
+	],
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/gusdeboer/random-profiles-mcp.git"
+	},
+	"homepage": "https://random-profiles.com",
+	"bugs": {
+		"url": "https://github.com/gusdeboer/random-profiles-mcp/issues"
+	}
+}

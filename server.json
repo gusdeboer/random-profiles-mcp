@@ -1,0 +1,30 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "com.random-profiles/mcp",
+  "description": "Generate fake user profiles and companies for tests, seed data, and AI agent demos.",
+  "websiteUrl": "https://random-profiles.com",
+  "repository": {
+    "url": "https://github.com/gusdeboer/random-profiles-mcp",
+    "source": "github"
+  },
+  "version": "1.4.3",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "random-profiles-mcp",
+      "version": "1.4.3",
+      "transport": {
+        "type": "stdio"
+      },
+      "environmentVariables": [
+        {
+          "name": "RANDOM_PROFILES_API_KEY",
+          "description": "API key from https://random-profiles.com. If omitted, the agent uses the claim_api_key tool to claim a free key interactively and caches it to ~/.random-profiles/config.json.",
+          "isRequired": false,
+          "isSecret": true,
+          "format": "string"
+        }
+      ]
+    }
+  ]
+}
