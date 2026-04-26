@@ -34,8 +34,8 @@
 
 import { test as base } from "@playwright/test";
 import type {
-	Company,
 	CompaniesResponse,
+	Company,
 	Profile,
 	ProfilesResponse,
 } from "random-profiles-types";
@@ -70,6 +70,7 @@ let cachedUser: Profile | null = null;
 let cachedCompany: Company | null = null;
 
 export const test = base.extend<Fixtures>({
+	// biome-ignore lint/correctness/noEmptyPattern: Playwright's fixture API requires the first arg to be a destructured object (even if empty) to skip dependency injection.
 	fakeUser: async ({}, use, testInfo) => {
 		if (!cachedUser) {
 			// Use the test title hashed to a small seed so the same test
@@ -85,6 +86,7 @@ export const test = base.extend<Fixtures>({
 		await use(cachedUser);
 	},
 
+	// biome-ignore lint/correctness/noEmptyPattern: see fakeUser fixture comment.
 	fakeCompany: async ({}, use, testInfo) => {
 		if (!cachedCompany) {
 			const seed = hashToSeed(testInfo.titlePath.join(" "));

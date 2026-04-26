@@ -48,8 +48,8 @@
 
 import { createClient } from "@supabase/supabase-js";
 import type {
-	Company,
 	CompaniesResponse,
+	Company,
 	Profile,
 	ProfilesResponse,
 } from "random-profiles-types";

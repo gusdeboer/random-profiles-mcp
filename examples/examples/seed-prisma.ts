@@ -46,8 +46,8 @@
 
 import { PrismaClient } from "@prisma/client";
 import type {
-	Company,
 	CompaniesResponse,
+	Company,
 	Profile,
 	ProfilesResponse,
 } from "random-profiles-types";
