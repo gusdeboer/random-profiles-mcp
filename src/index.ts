@@ -86,7 +86,7 @@ async function apiRequest(
 
 const server = new McpServer({
 	name: "random-profiles",
-	version: "1.4.3",
+	version: "1.4.4",
 });
 
 // ─── Instant key claim for AI-agent onboarding ──────────────────────────
@@ -115,7 +115,7 @@ server.tool(
 			.string()
 			.email()
 			.describe(
-				"Real email address to receive the key receipt. Will be used as the account identifier for usage tracking and eventual upgrades. Disposable domains are rejected.",
+				"Real email address to receive the key receipt. Will be used as the account identifier for usage tracking. Disposable domains are rejected.",
 			),
 	},
 	async ({ email }) => {
@@ -507,10 +507,10 @@ server.tool(
 
 server.tool(
 	"get_usage",
-	"Check your API key usage, tier, and daily limits for profiles and images.",
+	"Check your API key usage, tier, and daily limits for profiles, companies and images. The API is free; the response includes a support_url (buy me a coffee) for unlimited access.",
 	{},
 	async () => {
-		const data = await apiRequest("/v1/billing/usage");
+		const data = await apiRequest("/v1/usage");
 		return {
 			content: [{ type: "text" as const, text: JSON.stringify(data, null, 2) }],
 		};

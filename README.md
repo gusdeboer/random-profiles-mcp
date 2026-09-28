@@ -31,7 +31,7 @@ only do this once per machine.
 
 ### Prefer to bring your own key?
 
-If you already have an API key (or want to use a specific one for billing),
+If you already have an API key (or want to use a specific one),
 set it via env var and skip the claim flow entirely:
 
 ```json
@@ -62,7 +62,7 @@ The env var takes precedence over the cached key.
 | `get_company` | Get a single company by UUID |
 | `get_random_image` | Get a random profile photo (JPEG, optional size) |
 | `get_image` | Get a specific profile photo by UUID (JPEG, optional size) |
-| `get_usage` | Check your API key usage, tier, and daily limits |
+| `get_usage` | Check your API key usage, tier, and daily limits (includes a buy-me-a-coffee `support_url` for unlimited access) |
 
 ## Field Groups
 

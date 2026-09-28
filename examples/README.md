@@ -2,7 +2,7 @@
 
 Copy-pastable scripts and configs for using the [Random Profiles API](https://random-profiles.com) in real codebases. Each file is standalone — drop it into your project, set `RANDOM_PROFILES_API_KEY`, and run.
 
-Get a free API key at [random-profiles.com](https://random-profiles.com) (100 profiles + 500 images + 100 companies per day, no credit card).
+Get a free API key at [random-profiles.com](https://random-profiles.com) (1,000 profiles + 5,000 images + 1,000 companies per day, no credit card).
 
 ## Code examples
 
@@ -86,4 +86,4 @@ import { test, expect } from './examples/playwright-fixture';
 
 ## Got a use case we should add?
 
-Open an issue at [github.com/gusdeboer/random-profiles-mcp](https://github.com/gusdeboer/random-profiles-mcp/issues) or email [support@random-profiles.com](mailto:support@random-profiles.com).
+Open an issue at [github.com/gusdeboer/random-profiles-mcp](https://github.com/gusdeboer/random-profiles-mcp/issues) or email [info@random-profiles.com](mailto:info@random-profiles.com).

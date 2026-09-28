@@ -78,4 +78,4 @@ Cursor calls `get_companies` with `industry=Finance&country=GB&count=1` and read
 
 - **Server fails to start** — verify `RANDOM_PROFILES_API_KEY` is set in the `env` block of `mcp.json`, not your shell. `npx` runs in an isolated environment.
 - **"Tool not found: get_companies"** — you're on an older version of the package. Force a refresh: `npx clear-npx-cache && npx -y random-profiles-mcp@latest` and restart Cursor.
-- **429 daily limit** — upgrade at `/pricing` or wait until midnight UTC for the counter to reset.
+- **429 daily limit** — buy me a coffee at https://buymeacoffee.com/gusdeboer for unlimited access, or wait until midnight UTC for the counter to reset.

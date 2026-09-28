@@ -1,6 +1,6 @@
 {
 	"name": "random-profiles-mcp",
-	"version": "1.4.3",
+	"version": "1.4.4",
 	"description": "MCP server for Random Profiles API — generate fake user profiles and companies for AI agents",
 	"mcpName": "com.random-profiles/mcp",
 	"type": "module",

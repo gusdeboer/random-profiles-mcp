@@ -98,5 +98,5 @@ Claude calls `get_usage` and shows the answer.
 ## 5. Troubleshooting
 
 - **"No tools available"** — check the `env.RANDOM_PROFILES_API_KEY` is set in the MCP config, not as a shell env var. The `npx` command runs in a fresh environment.
-- **429 rate-limited** — free tier is 100 profiles + 500 images + 100 companies per day. Upgrade on the `/pricing` page or wait until midnight UTC.
+- **429 rate-limited** — free tier is 1,000 profiles + 5,000 images + 1,000 companies per day. Buy me a coffee at https://buymeacoffee.com/gusdeboer for unlimited access, or wait until midnight UTC.
 - **Old tools list cached** — after updating the package (`npx -y random-profiles-mcp@latest`), restart Claude so it re-fetches the tool schema.
